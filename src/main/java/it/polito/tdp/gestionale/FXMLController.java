@@ -8,34 +8,34 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
-//controller del turno A --> switchare al master_turnoB per turno B
+//controller del turno B --> switchare al master_turnoA per turno A
 
 public class FXMLController {
 	
 	private Model model;
 
-    @FXML
-    private ResourceBundle resources;
-
-    @FXML
+	@FXML
+	private ResourceBundle resources;
+	
+	@FXML
     private URL location;
 
     @FXML
     private TextArea txtResult;
 
     @FXML
-    void doCorsiFrequentati(ActionEvent event) {
+    void doFrequenzaRiviste(ActionEvent event) {
 
     }
 
     @FXML
-    void doVisualizzaCorsi(ActionEvent event) {
+    void doVisualizzaRiviste(ActionEvent event) {
 
     }
 
     @FXML
     void initialize() {
-        assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'DidatticaGestionale.fxml'.";
+        assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'Porto.fxml'.";
 
     }
 
