@@ -1,22 +1,35 @@
 package it.polito.tdp.gestionale.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Corso extends Nodo {
 
 	private String codins;
 	private String nome;
 	private int crediti;
 	private int pd;
+	private List<Studente> studentiIscritti;
 
 	public Corso(String codins, int crediti, String nome, int pd) {
 		this.codins = codins;
 		this.crediti = crediti;
 		this.nome = nome;
 		this.pd = pd;
+		studentiIscritti = new ArrayList<>();
 	}
 
 	/*
 	 * Getters and Setters
 	 */
+
+	public List<Studente> getStudentiIscritti() {
+		return studentiIscritti;
+	}
+
+	public void setStudentiIscritti(List<Studente> studentiIscritti) {
+		this.studentiIscritti = studentiIscritti;
+	}
 
 	public String getCodins() {
 		if (codins == null)
